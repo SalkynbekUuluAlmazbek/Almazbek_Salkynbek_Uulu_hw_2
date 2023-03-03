@@ -11,15 +11,15 @@ public class Main {
         goOut(generateRandomAge(),10);
     }
 
-    public static void goOut(int age, int temperature) {
+    public static String goOut(int age, int temperature) {
         if (age >= 20 && age <= 45 && temperature >= -20 && temperature <= 30) {
-            System.out.println("Можно идти гулять");
+            return "Можно идти гулять";
         } else if (age < 20 && temperature >= 0 && temperature <= 28) {
-            System.out.println("Можно идти гулять");
+            return "Можно идти гулять";
         } else if (age > 45 && temperature >= -10 && temperature <= 25) {
-            System.out.println("Можно идти гулять");
+            return "Можно идти гулять";
         } else {
-            System.out.println("Оcтавайтесь дома");
+            return "Оcтавайтесь дома";
         }
     }
     public static int generateRandomAge() {
